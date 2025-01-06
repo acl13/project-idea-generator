@@ -3,7 +3,7 @@ export const appCategories = [
   "Entertainment",
   "Education",
   "Health and Fitness",
-  "Lifesyle",
+  "Lifestyle",
   "News",
   "Shopping",
   "Sports",
