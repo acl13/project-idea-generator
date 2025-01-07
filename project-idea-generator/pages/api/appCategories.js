@@ -1,4 +1,4 @@
-export const appCategories = [
+const appCategories = [
   "Social Networking",
   "Entertainment",
   "Education",
@@ -25,3 +25,5 @@ export const appCategories = [
   "Reference",
   "Utilities",
 ];
+
+export { appCategories };

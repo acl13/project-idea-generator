@@ -1,4 +1,4 @@
-export const apiList = [
+const apiList = [
   {
     id: 1,
     category: "API Directories",
@@ -1570,3 +1570,5 @@ export const apiList = [
     description: "Console-oriented weather forecast service",
   },
 ];
+
+export { apiList };

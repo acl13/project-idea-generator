@@ -1,5 +1,5 @@
-import { apiList } from "./apiList";
-import { appCategories } from "./appCategories";
+import { apiList } from "./api/apiList";
+import { appCategories } from "./api/appCategories";
 import { useState } from "react";
 
 export default function Home() {
