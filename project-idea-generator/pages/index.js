@@ -24,25 +24,37 @@ export default function Home() {
   };
 
   return (
-    <div>
-      <h1>Random Project Idea Generator</h1>
-      {category !== "" ? (
-        <h2>
-          Build a <span className="italic">{category}</span> app using the
-          following API:
-        </h2>
-      ) : (
-        <h2>Press the button to generate a random API and App Category</h2>
-      )}
-      <h3>
-        <a href={api.link} target="_blank">
-          {api.name}
-        </a>
-      </h3>
-      <p>{api.description}</p>
-      <button type="button" onClick={getRandomProjectIdea}>
-        Get Random Project Idea
-      </button>
-    </div>
+    <main>
+      <div className="content">
+        <h1>Random Project Idea Generator</h1>
+        {category !== "" ? (
+          <h2>
+            Build a <span className="italic">{category}</span> app using the
+            following API:
+          </h2>
+        ) : (
+          <h2>Press the button to generate a random API and App Category</h2>
+        )}
+        <h3>
+          <a href={api.link} target="_blank">
+            {api.name}
+          </a>
+          &nbsp; {api.description}
+        </h3>
+        <button type="button" onClick={getRandomProjectIdea}>
+          Get Random Project Idea
+        </button>
+        <p className="faded">
+          APIs are generated from this &nbsp;
+          <a
+            target="_blank"
+            href="https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/"
+          >
+            list
+          </a>
+          .
+        </p>
+      </div>
+    </main>
   );
 }
